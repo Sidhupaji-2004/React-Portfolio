@@ -1,0 +1,28 @@
+.wave-background {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.custom-shape-divider-top-1709216211 {
+  position: absolute;
+  margin-top: 60px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1709216211 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 143px;
+}
+
+.custom-shape-divider-top-1709216211 .shape-fill {
+  fill: #2ab1e2;
+}

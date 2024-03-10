@@ -1,0 +1,26 @@
+.image-container {
+  position: relative;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.cartoon-image {
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out;
+}

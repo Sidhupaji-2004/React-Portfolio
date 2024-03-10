@@ -1,0 +1,78 @@
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.svg-rect {
+  width: 60%; /* Adjust as needed for responsiveness */
+  position: absolute;
+  top: 5%; /* Adjust as needed for responsiveness */
+  right: 0;
+  z-index: -1;
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 768px) {
+  .svg-rect {
+    width: 40%; /* Adjust as needed */
+    top: 50px; /* Adjust as needed */
+  }
+}
+
+/* Additional adjustments for even larger screens */
+@media (min-width: 1024px) {
+  .svg-rect {
+    width: 30%; /* Adjust as needed */
+    top: 100px; /* Adjust as needed */
+  }
+}
+
+.code-img {
+  position: absolute;
+  top: 250px;
+  right: 150px;
+  width: 35%;
+  height: auto;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: blue;
+  }
+}
+
+.typing-text {
+  overflow: hidden;
+  font-family: sans-serif;
+  max-width: 100%;
+  font-size: 1rem; /* Ensures the text is not visible outside of the animation */
+  border-right: 4px solid blue; /* Create a cursor effect */
+  white-space: nowrap; /* Ensures the text doesn't wrap */
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
